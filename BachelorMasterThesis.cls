@@ -20,7 +20,8 @@
 % LPPL v1.3c (http://www.latex-project.org/lppl)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  order on abstract page changed by Rostysav Hryniv on 14/02/19
+%  Order on abstract page changed by Rostysav Hryniv on 14/02/19
+%  Cyrillic support, spaces and cases in filenames, class name fixed by Oleg Farenyuk aka Indrekis spring-summer 2024.
 %----------------------------------------------------------------------------------------
 %	CLASS DEFINITION AND PARAMETERS
 %----------------------------------------------------------------------------------------
