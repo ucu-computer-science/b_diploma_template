@@ -25,6 +25,7 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+ukrainian,
 english, % ngerman for German
 singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
@@ -41,7 +42,9 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
-\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage[ukrainian, english]{babel}
+
+% \usepackage{mathpazo} % Use the Palatino font by default % O.F. Breaks Cyr. including Ukrainian
 
 \usepackage[backend=bibtex,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
@@ -164,7 +167,7 @@ headsepline, % Uncomment to get a line under the header
 % \cleardoublepage
 
 %----------------------------------------------------------------------------------------
-%	QUOTATION PAGE
+%	QUOTATION PAGE 
 %----------------------------------------------------------------------------------------
 
 \vspace*{0.2\textheight}
