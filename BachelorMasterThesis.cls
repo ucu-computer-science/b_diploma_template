@@ -9,10 +9,12 @@
 % Authors:
 % Vel (vel@latextemplates.com)
 % Johannes Böttcher
+% 
+% Modified by Rostysav Hryniv and Oleg Farenyuk (indrekis@ucu.edu.ua)
 %
 % Notes:
 % 1) This class file defines the structure and layout of the template file (main.tex).
-% 2) It has been written in such a way that under most circumstances you should not need
+% 2) It has been written in such a way that under most circumstances, you should not need
 % to edit it; updating it to a newer version will be harder. If you do make changes, please change the name of
 % the file and add comments to make your changes more visible.
 %
