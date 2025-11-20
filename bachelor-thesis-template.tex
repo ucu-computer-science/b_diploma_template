@@ -49,7 +49,11 @@ headsepline, % Uncomment to get a line under the header
 % \usepackage{mathpazo} % Use the Palatino font by default 
   % O.F. Breaks Cyrillic, including Ukrainian, breaks bold, italic, etc. Commented out. The alternative is to use Lualatex.
 
-\usepackage[backend=bibtex,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[
+backend=biber, % Use default backend
+%sorting=none, % Sort the bibliography entries by order of citation
+%style=authoryear, % Use the authoryear citation style
+]{biblatex}
 
 \addbibresource{bibliography.bib} % The filename of the bibliography
 
@@ -83,9 +87,9 @@ headsepline, % Uncomment to get a line under the header
 \subject{Data Science} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
 \university{\href{http://www.ucu.edu.ua}{Ukrainian Catholic University}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
-\department{\href{http://apps.ucu.edu.ua}{Faculty of Applied Sciences}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{\href{http://apps.ucu.edu.ua}{Department of Computer Sciences and Information Technologies}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
-\faculty{\href{http://apps.ucu.edu.ua}{}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\faculty{\href{http://apps.ucu.edu.ua}{Faculty of Applied Sciences}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\department{\href{http://apps.ucu.edu.ua}{Department of Computer Sciences and Information Technologies}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{}{}} % Your research group's name and URL, this is not currently used anywhere in the template, print it elsewhere with \groupname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -113,7 +117,7 @@ headsepline, % Uncomment to get a line under the header
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
 \HRule \\[1.5cm] % Horizontal line
- 
+
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
@@ -123,23 +127,23 @@ headsepline, % Uncomment to get a line under the header
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
 \emph{Supervisor:} \\
-\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link
 \end{flushright}
 \end{minipage}\\[3cm]
- 
+
 \vfill
 
 \large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
 \textit{in the}\\[0.4cm]
-\groupname\\\deptname\\[2cm] % Research group name and department name
- 
+\facname\\\deptname\\[2cm] % Research group name and department name
+
 \vfill
 \includegraphics[height=2.5cm]{UCU_APPS_logo} % University/department logo - uncomment to place it
 % Logo taken from the official brandbook: https://ucu.edu.ua/brandbook/brand-book-sources/
-% UCU_APPS_logo.pdf 
+% UCU_APPS_logo.pdf
 
 \vfill
-{\large Lviv 2024}\\[4cm] % Date
+{\large Lviv 2025}\\[4cm] % Date
  
 \vfill
 \end{center}
